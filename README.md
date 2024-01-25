@@ -1,3 +1,5 @@
+! [BuildStatus] (https://github.com/angelicalam/BMI203-HW2-BFS/workflows/HW2-BFS/badge.svg?event=push)
+
 # Assignment 2
 Breadth-first search
 
@@ -26,10 +28,14 @@ In test/test_bfs.py:
 * Include a test case that fails and raises an exception
 
 
+## Graph() Methods
+* `bfs(self, start, end=None)` performs a breadth first traversal and pathfinding on graph G. When no end node is provided, `bfs` adds `start` to a first-in first-out queue and visits all connected nodes in a breadth first fashion. This list of unique nodes, including the start node, is ordered by first to last visitation and is returned. When an end node is provided, `bfs` stops breadth-first traversal of the graph upon encountering the end node and returns the shortest path from the start to the end. If no path exists from the start node to the end node, `None` is returned.
+
+
 ## Software Development Assessment
 
 * Write unit tests (in the test_bfs.py file) for your breadth first search
-* Replace these instructions with a brief description of bfs in your forked repo
+* Replace these instructions with a brief description of bfs in your forked repo. See Graph() Methods section above.
 	
 * Automate Testing with a [Github Actions](https://docs.github.com/en/actions)
 
